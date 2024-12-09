@@ -1,6 +1,4 @@
-Here's the revised and clarified markdown for your Java Banking Application project instructions:
 
----
 
 # **Java Banking Application Project Instructions**
 
