@@ -21,14 +21,14 @@ This project involves creating a command-line banking application in Java. The a
 
 ### **2. Signup Flow**
 - **Inputs Required**:
-  - **Username**: Must be unique and lowercase.
+  - **Username**: Must be unique and lowercase.    
   - **Password**: Minimum of 6 characters.
   - **First Name**
   - **Initial Deposit Amount**
   - **Withdraw Limit**
 
 - **Conditions**:
-  - Validate all input fields.
+  - Validate all input fields.  
   - If validation succeeds, create a new user and account.
   - Prompt the user to log in after successful signup.
 
@@ -42,12 +42,13 @@ This project involves creating a command-line banking application in Java. The a
 - **Conditions**:
   - If the username or password is incorrect, display a meaningful error message.
   - Upon successful login, display the **Logged-In User Menu**.
+- // always possible to exit/ go back to main menu?
 
 ---
 
 ## **Logged-In User Menu**
 
-1. **Show Balance**: 
+1. **Show Balance**:                
    - Display the user's current balance and return to the menu.
 
 2. **Deposit**: 
@@ -63,17 +64,29 @@ This project involves creating a command-line banking application in Java. The a
    - Log the user out and return to the main menu.
 
 ---
+                    
 
+-- smooth overgang fra steg til steg? 
 
 
 ## Basic Upgrades:
 1. **Additional Validation**:
-   - **Username must be lowercase**.
+   - **Username must be lowercase**. + must contain valid characters! 
    - **Usernames must be unique**.
    - **Password must be at least 6 characters**.
 
 2. **Type Validation**:
-   - Ensure correct data types for **int**, **String**, **double** inputs before assigning.
+   - Ensure correct data types for **int**, **String**, **double** inputs before assigning.                 
+   - 
+   - paswword validation, 
+- 
+
+-      A check that the withdrawal amount is a multiple of a certain value (e.g., 10 or 50).
+-                         if (newPassword.equals(currentUser.getPassword())) {
+  System.out.println("New password cannot be the same as the old password.");
+  }
+-         7. Account Balance Validation
+In showBalance(), ensure currentUser is not null before attempting to access their balance. This will avoid potential NullPointerException
 
 3. **Universal Account Limits**:
    - Set consistent deposit and withdrawal limits across the system.
@@ -114,3 +127,5 @@ This project involves creating a command-line banking application in Java. The a
 
 3. **Lockout on Failed Logins**:
    - Lock user out after a specified number of incorrect password attempts.
+
+
